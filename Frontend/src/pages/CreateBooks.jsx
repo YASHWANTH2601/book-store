@@ -18,7 +18,11 @@ export default function CreateBooks() {
       publishYear,
     };
     axios
+<<<<<<< HEAD
       .post("http://localhost:4000/books", data)
+=======
+      .post("https://book-store-backend-8mlt.onrender.com", data)
+>>>>>>> 691146f42946a7f73987f494b3b495e864a7813f
       .then(() => {
         setLoading(false);
         navigate("/");
