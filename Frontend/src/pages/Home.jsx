@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5555/books")
+      .get("https://book-store-backend-8mlt.onrender.com")
       .then((response) => {
         setBooks(response.data.books);
         setLoading(false);
