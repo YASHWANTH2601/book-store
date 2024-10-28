@@ -18,7 +18,7 @@ export default function CreateBooks() {
       publishYear,
     };
     axios
-      .post("http://localhost:5555/books", data)
+      .post("http://localhost:4000/books", data)
       .then(() => {
         setLoading(false);
         navigate("/");

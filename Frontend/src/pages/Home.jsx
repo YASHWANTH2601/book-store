@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5555/books")
+      .get("http://localhost:4000/books")
       .then((response) => {
         setBooks(response.data.books);
         setLoading(false);

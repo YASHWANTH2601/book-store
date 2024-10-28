@@ -11,7 +11,7 @@ export default function ShowBook() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5555/books/" + id)
+      .get("http://localhost:4000/books/" + id)
       .then((response) => {
         setBook(response.data);
         setLoading(false);
